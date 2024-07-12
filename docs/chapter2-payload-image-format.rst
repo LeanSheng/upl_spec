@@ -5,7 +5,7 @@
 Chapter 2: Payload Image Format
 ===============================
 
-The Payload, as a standalone component, needs to be properly loaded by Platform
+kkkThe Payload, as a standalone component, needs to be properly loaded by Platform
 Init into memory prior to execution. In this loading process, additional
 processes might be required, such as assembling, rebasing, authenticating, etc.
 Today, many Payloads use their own image formats (PE, ELF, FV, RAW, etc.), and
@@ -656,7 +656,7 @@ For 64-bit it is 16 or 24 bytes per record:
                               symbol index (upper 64 bits)
    0x10        addend         optional addend (depending on
                               relocation type)
-   =========== ============== ===================================
+   =========== ================ ===================================
 
 Available relocation types are defined below. These may include arch-specific
 relocations and typically follow the values used by the ELF format. For now
