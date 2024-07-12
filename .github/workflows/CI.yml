@@ -41,6 +41,11 @@ jobs:
     - name: build singlehtml
       run: make singlehtml
 
+    - name: Test GitHub Pages Build
+      run: |
+        mkdir _site
+        cp -r _build/html/* _site/
+
     - name: upload
       uses: actions/upload-artifact@v3
       with:
